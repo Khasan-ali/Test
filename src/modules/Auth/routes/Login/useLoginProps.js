@@ -2,11 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { authStore } from "store/auth.store";
 import { useMutation } from "@tanstack/react-query"
-import axios from "axios"
-
-const request = axios.create({
-  baseURL: "http://54.196.215.223:8000/v1/"
-})
+import request from "services/httpRequest";
 
 export const useLoginProps = () => {
 
@@ -31,6 +27,7 @@ export const useLoginProps = () => {
     })
 
   };
+
 
   return {
     handleClick,

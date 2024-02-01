@@ -11,7 +11,7 @@ class AuthStore {
     email: "",
     access_token: "",
     refresh_token: "",
-    user_type: ""
+    user_type: "",
   };
 
   constructor() {
@@ -39,4 +39,3 @@ class AuthStore {
 
 
 export const authStore = new AuthStore();
-

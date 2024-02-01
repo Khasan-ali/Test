@@ -7,11 +7,11 @@ import { ChakraProvider, theme } from "@chakra-ui/react";
 
 function App() {
   return <ChakraProvider theme={theme}>
-    <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <Router />
+      <BrowserRouter>
+          <Router />
+      </BrowserRouter>
       </QueryClientProvider>
-    </BrowserRouter>
   </ChakraProvider>;
 }
 
